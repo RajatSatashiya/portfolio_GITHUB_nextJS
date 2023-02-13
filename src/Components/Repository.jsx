@@ -5,7 +5,7 @@ import { repos } from "@/Resources/Repositories";
 function Repository() {
   const displayRepositories = repos.items.map((repo, index) => {
     return (
-      <div className="repository">
+      <div className="repository" key={index}>
         <h4>
           <Link href={`${repo.html_url}`}>{repo.name}</Link>
           <span>({repo.visibility})</span>

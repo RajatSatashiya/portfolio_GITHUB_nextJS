@@ -179,13 +179,16 @@ nav h3 {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   html {
     font-size: 13px;
   }
   .profile-pic {
     /* height: 20%; */
     height: 50%;
+  }
+  .profilepic {
+    width: 100%;
   }
   .landing {
     padding: 1rem;
@@ -231,13 +234,14 @@ nav h3 {
   margin-top: 2rem;
   display: flex;
   justify-content: space-evenly;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   border-radius: 15px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.658);
 }
 
 .profilepic {
   border-radius: 50%;
+  /* width: 50%; */
 }
 
 .profile-right {
@@ -248,6 +252,7 @@ nav h3 {
 .profile-left {
   color: #f38fad;
   font-size: 2rem;
+  /* background: lightgreen; */
 }
 .profile-left h3 {
   font-size: 3rem;
@@ -339,4 +344,10 @@ nav h3 {
 .repodesc {
   margin: 0.2rem 0 0.5rem 0;
   font-weight: 600;
+}
+
+@media screen and (max-width: 550px) {
+  .repository {
+    width: 100%;
+  }
 }
